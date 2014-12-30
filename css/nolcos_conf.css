@@ -1,0 +1,156 @@
+
+
+/* 
+GENERAL 
+---------------------------------------------------------------------------------------------------- */
+
+body {
+	font-size: 16px;
+	background-color: #f0f0f0;
+	color: #202020;
+}
+
+.container {
+	background-color: white;
+	border-right: 1px solid #C0C0C0;
+	border-left: 1px solid #C0C0C0;
+}
+
+
+/* RESPONSIVE / MOBILE-FIRST 
+--------------------------------------------- */
+
+/* FIXED HEADER 
+--------------------------------------------- */
+#logos {
+	display: inline-block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 102;
+}
+
+#logos #ifac {
+	float: left;
+	clear: right;
+	display: inline;
+	padding-top: .75em;
+	padding-left: 1em;
+}
+
+#logos #aacc {
+	float: right;
+	display: inline;
+	padding-top: .75em;
+	padding-right: 1em;
+}
+
+.main-nav {
+	display: inline-block;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 100;
+	background-color: white;
+	padding-top: 5em;
+	-webkit-box-shadow: 0 5px 20px 1px #87868F;
+	box-shadow: 0 5px 20px 1px #87868F;
+}
+
+.main-nav ul {
+	text-align: center;
+	z-index: 101;
+}
+
+.main-nav li {
+	list-style: none;
+	display: inline;
+	padding: 1em .75em;
+}
+
+.main-nav li a {
+	color: #1F4395;
+	font-weight: 600;
+}
+
+/* MAIN CONTENT SECTION
+--------------------------------------------- */
+#main-content {
+	margin: 0;
+	margin-top: 7em;
+}
+
+.conf-banner {
+	height: 500; 
+	background-image: url("http://www.montereyrentals.com/img/monterey-oceanfront-rentals.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.conf-banner h1 {
+	padding-top: 30px;
+}
+
+.conf-banner h1,
+.conf-banner h2,
+.conf-banner h4 {
+	z-index: 100;
+	color: red;
+	margin-top: 0;
+	margin-left: 70px;
+	color: white;
+}
+
+#action-steps {
+	margin-top: 20px;
+}
+
+#action-steps .action-buttons {
+	padding: 10px;
+}
+
+#action-steps p {
+	padding: 10px 50px;
+}
+
+/*h2, .h2 {
+	margin-top: 0;
+	padding-left: 10px;
+}*/
+
+#first.row, #second.row, 
+#third.row, #fourth.row, 
+#fifth.row, #sixth.row,
+#seventh.row, #eigth.row,
+#ninth.row, #tenth.row {
+	margin: 2em 0;
+}
+
+.row .action-buttons {
+	text-align: center;
+}
+
+.row h1, .row h2, .row h3 {
+	margin-top: 0;
+	padding-top: 0;
+	padding-left: 10px;
+}
+
+.row p {
+	padding: 0 10px 10px 10px;
+	margin: 0;
+}
+
+/* {
+	float: left;
+	clear: right;
+	padding: 0 1em 2em 1em;
+}*/
+
+img.odd, img.even {
+	float: right;
+	clear: left;
+	padding: 0 10px 10px 10px;
+	margin-bottom: 20px;
+}
+
