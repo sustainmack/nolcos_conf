@@ -65,7 +65,7 @@ body {
 .main-nav li {
 	list-style: none;
 	display: inline;
-	padding: 1em .5em;
+	padding: 1em .75em;
 }
 
 .main-nav li a {
