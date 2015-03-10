@@ -7,6 +7,7 @@
 body {
     width: 100%;
     height: 100%;
+    font-family:'Open Sans', Tahoma, Helvetica, Sans-serif;
 }
 
 html {
@@ -14,27 +15,76 @@ html {
     height: 100%;
 }
 
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
 p {
     margin: 0 0 20px;
     font-size: 16px;
-    line-height: 2.0rem;    
+    line-height: 20px;   
+    text-align: left; 
+}
+
+.navbar-default {
+    background-color: #41b7d8; 
+    border: none;
 }
 
 a.navbar-brand {
-    font-size: 32px;
-    color: #1F4395;
+    font-size: 27px;
+    color: #F8F8FF;
     padding: 15px;
 }
 
+.navbar-default .navbar-brand {
+    color: #F8F8FF;
+}
+
 .navbar-nav li {
-    background-color: #F7F7F7;
-    border-right: 1px solid #eee;
-    border-left: 1px solid #eee;
-    }
+    background-color: #41b7d8;
+/*    font-size: 13px;
+*/    }
 
 .navbar-nav > li > a {
-    color: #555;
-    font-family: Tahoma, Helvetica, Sans-serif;
+    color: #F8F8FF;
+}
+
+/*.navbar-default .navbar-nav > li#home > a {
+    font-size: 24px;
+    text-align: left;
+}*/
+
+.navbar-default .navbar-nav > li > a {
+    color: #F8F8FF;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: #e6e6e6;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: #3aa4c2;
+    color: #e6e6e6;
+}
+
+.navbar-fixed-bottom .navbar-collapse, 
+.navbar-fixed-top .navbar-collapse {
+    max-height: 100%;
+}
+
+.collapse.in {
+    display: inline-block;
+}    
+
+#site-heading #ifac img,
+#site-heading #aacc img {
+    margin: auto;
 }
 
 #site-heading h1 {
@@ -43,6 +93,14 @@ a.navbar-brand {
 
 #site-heading img {
     padding: 20px 0;
+}
+
+#aacc img {
+    padding-top: 10px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #e9e9e9;
 }
 
 @media(min-width: 820px) {
@@ -65,37 +123,87 @@ of those sections to manage the look and feel of the site. */
     .intro-section {
         min-height: 100%;
         padding-top: 70px;
-        padding-bottom: 40px;
         text-align: center;
         background: #fff;
+    }
+
+    .registration-section {
+        padding-top: 4em;
+        text-align: center;
+        background: #fff;        
     }
 
     .committee-section {
         min-height: 100%;
-        padding-top: 90px;
-        padding-bottom: 40px;
+        padding-top: 4em;
         text-align: center;
         background: #fff;
     }
 
+    .speakers-section {
+        padding-top: 4em;
+        text-align: center;
+        background: #fff;        
+    }
+
     .submissions-section {
         min-height: 100%;
-        padding-top: 90px;
-        padding-bottom: 40px;
+        padding-top: 4em;
+        text-align: center;
+        background: #fff;
+    }
+
+    .submissions-section p.copyright {
+        text-align: center;
+    }
+
+    .program-section {
+/*        min-height: 100%;
+*/        padding-top: 4em;
+        text-align: center;
+        background: #fff;
+    }
+
+    .submissions-section p {
+        text-align: left;
+    }
+
+    .travel-section {
+        min-height: 100%;
+        padding-top: 4em;
         text-align: center;
         background: #fff;
     }
 
     .contact-section {
         min-height: 100%;
-        padding-top: 90px;
-        padding-bottom: 40px;
+        padding-top: 4em;
         text-align: center;
         background: #fff;
     }
 
+    .container {
+        padding-bottom: 4em;
+        border-bottom: 0.08em solid #e5e5e5;
+    }
+
+    .travel-section .container  {
+        border-bottom: none;
+        padding-bottom: 0
+    }
+
+    section h3 {
+        margin-bottom: 1em;
+        padding-top: .25em;
+        font-size: 28px;
+    }
+
+    .travel-section h4 {
+        margin-top: 0;
+    }
+
     .navbar-default {
-        background-color: #f7f7f7;
+        margin: auto;
     }
 
     .text-heavy {
@@ -116,6 +224,17 @@ of those sections to manage the look and feel of the site. */
         text-align: center;
         padding-right: 3em;
         padding-left: 3em;
+    }
+
+    a.nolcos-button {
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        background-color: #e0e0e0;
+    }
+
+    p#paper-instruction {
+        margin-top: 1em;
     }
 
  @media(min-width:767px) {
@@ -149,18 +268,23 @@ of those sections to manage the look and feel of the site. */
     }
 
     a.navbar-brand {
-        font-size: 32px;
-        color: #1F4395;
-        padding: 24px 10px;
+        font-size: 27px;
+        font-weight: 700;
     }
 
     .navbar-nav {
-        float: right;
         margin: 0;
     }
 
+    ul.navbar-nav {
+        float: right;
+        margin-right: 2em;
+    }
+
     .navbar-nav > li > a {
-        padding: 25px 20px;
+        padding-right: 20px;
+        padding-left: 20px; 
+        font-size: 14px;           
     }
 
     #ifac {
@@ -181,12 +305,30 @@ of those sections to manage the look and feel of the site. */
         padding: 0;
     }
 
+    #home-banner {
+        margin-bottom: 2em;
+    }
+
+}
+
+@media(min-width: 768px) {
+    ul.navbar-nav {
+        float: right;
+        margin-right: 2em;
+    }
 }
 
  @media(min-width: 960px) {
 
-    img {
-        max-width: 920px;
+    .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+    display: block;
+    height: auto;
+    margin: auto;
+    max-width: 90%;
+    }
+
+    a.navbar-brand {
+        margin-top: .35em;
     }
 
  }
