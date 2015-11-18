@@ -249,6 +249,14 @@ of those sections to manage the look and feel of the site. */
         line-height: 2.0rem;
     }
 
+    p a {
+        text-decoration: underline;
+    }
+
+    th {
+        text-align: center;
+    }
+
     .dl-horizontal dt {
         clear: left;
         float: left;
