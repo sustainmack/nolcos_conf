@@ -103,6 +103,15 @@ a.navbar-brand {
     background-color: #e9e9e9;
 }
 
+#plen-arcak, #plen-astolfi, #plen-burns, #plen-fahroo,
+#plen-cortes, #plen-dixon, #plen-fossen, #plen-xia {
+    padding-top: 3.5em;
+}
+
+hr {
+    margin-top:2em;
+}
+
 @media(min-width: 820px) {
     .navbar {
         padding: 0;
